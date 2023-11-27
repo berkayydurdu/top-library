@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <script src="lib.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+      <div class="add_book">
+          <button type="button" onclick="showDialog()">+ ADD BOOK</button>
+      </div>
+
+      <div id="library">
+
+      </div>
+
+      <dialog>
+        <p>Add new book</p>
+        <label for="bookTitle">Title</label>
+        <input type="text" name="book-title" id="bookTitle" required>
+        <br>
+        <label for="bookAuthor">Author</label>
+        <input type="text" name="book-author" id="bookAuthor" required>
+        <br>
+        <label for="bookPages">Pages</label>
+        <input type="number" name="book-pages" id="bookPages" required>
+        <br>
+        <label for="bookRead">Have you read it?</label>
+        <input type="checkbox" name="book-read" id="bookRead", value="read">
+        <br>
+        <div class="dialog-buttons">
+          <button id="submitBut" type="submit">Submit</button>
+          <button id="cancelBut" type="button">Cancel</button>
+        </div>
+      </dialog>
+  </div>
+</body>
+</html>
